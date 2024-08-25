@@ -1,5 +1,22 @@
 # JavaScript Functional Library Project
+# JavaScript Functional Library
 
+## Overview
+
+This library provides functional utilities like `myEach`, `myMap`, and `myReduce`.
+
+## How to Use
+
+```javascript
+const { myEach, myMap, myReduce } = require('my-functional-library');
+
+// Usage example
+myEach([1, 2, 3], console.log);
+const mapped = myMap([1, 2, 3], num => num * 2);
+const reduced = myReduce([1, 2, 3], (acc, val) => acc + val, 0);
+
+console.log(mapped); // [2, 4, 6]
+console.log(reduced); // 6
 ## Learning Goals
 
 - Gain a greater understanding of JavaScript's built-in collection-processing
